@@ -66,7 +66,7 @@ def main():
     standard_url = "https://www.dansketaler.dk/tale/dronningens-nytaarstale-"
     
     # From earliest to latest speech in years
-    year_range = list(range(1972,2024))
+    year_range = list(range(1972,2023))
     
     for year in year_range:
         extract_speech(standard_url+str(year), FILE_NAME, export_dir)
