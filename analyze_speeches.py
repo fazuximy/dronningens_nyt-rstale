@@ -56,7 +56,7 @@ for speech in speech_data_list:
     
     removed_punctuations = [i for i in removed_stop_words if re.match("^[\w\s]+$",i)]
     
-    print(removed_punctuations.count("danmark"))
+    print(removed_punctuations.count("danmark"), speech.year)
     
     stemmed_words = [stemmer.stem(i) for i in removed_punctuations]
     
